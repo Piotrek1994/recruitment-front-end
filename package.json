@@ -18,9 +18,10 @@
     "clean-webpack-plugin": "^4.0.0",
     "css-loader": "^6.7.3",
     "file-loader": "^6.2.0",
-    "html-loader": "^4.2.0",
+    "html-loader": "^0.5.5",
     "html-webpack-plugin": "^5.5.0",
     "mini-css-extract-plugin": "^2.7.2",
+    "sass": "^1.57.1",
     "sass-loader": "^13.2.0",
     "webpack": "^5.75.0",
     "webpack-cli": "^5.0.1",
@@ -29,10 +30,11 @@
   },
   "dependencies": {
     "@babel/node": "^7.20.7",
+    "autoprefixer": "10.4.5",
     "babel-loader": "^9.1.0",
     "cross-env": "^7.0.3",
     "module-not-found-error": "^1.0.1",
-    "sass": "^1.57.1",
-    "scss-reset": "^1.2.2"
+    "scss-reset": "^1.2.2",
+    "url-loader": "^4.1.1"
   }
 }
