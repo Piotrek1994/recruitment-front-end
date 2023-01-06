@@ -1,22 +1,32 @@
 @import 'scss-reset/_reset.scss';
 @import 'custom';
+@import 'background';
+@import 'navPointer';
+@import 'btnContact';
+@import 'blogSection';
 
 .wrapper {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	position: absolute;
 	left: 50%;
 	width: 1440px;
-	height: 100vh;
 	transform: translate(-50%);
 	background-color: $lightGray;
 	font-family: 'Poppins', sans-serif;
+	font-weight: 500;
 }
 
 .header {
+	position: absolute;
+	width: 100%;
+
 	display: flex;
+	justify-content: space-between;
 	align-items: center;
-	margin-right: 130px;
+
 	.logo {
-		position: relative;
 		width: 162px;
 		height: 162px;
 		border-bottom-right-radius: 50px;
@@ -30,28 +40,28 @@
 			transform: translate(-25%, -50%);
 		}
 	}
-}
-
-.header_contact {
-	width: 450px;
-	display: flex;
-	justify-content: space-between;
-	align-items: center;
-	margin-left: auto;
-	.header_contact-btn {
-		width: 136px;
-		height: 43px;
-		margin-left: 2rem;
-		border-radius: 30px;
-		border: 1px solid $btnColor;
-		color: $btnColor;
-	}
-	.header_contact-number {
-		margin-right: 20px;
-		color: $btnColor;
-	}
-	.header_contact-call {
-		color: $mediumGray;
+	.header_contact {
+		width: 450px;
+		display: flex;
+		justify-content: space-between;
+		margin-right: 130px;
+		align-items: center;
+		margin-left: auto;
+		.header_contact-btn {
+			width: 136px;
+			height: 43px;
+			margin-left: 2rem;
+			border-radius: 30px;
+			border: 1px solid $btnColor;
+			color: $btnColor;
+		}
+		.header_contact-number {
+			margin-right: 20px;
+			color: $btnColor;
+		}
+		.header_contact-call {
+			color: $mediumGray;
+		}
 	}
 }
 
@@ -62,6 +72,7 @@
 		display: flex;
 		justify-content: space-between;
 		li {
+			position: relative;
 			cursor: pointer;
 		}
 		li:hover {
@@ -71,28 +82,28 @@
 }
 
 .hero_section {
-	
-	position: absolute;
+	// position: absolute;
 	display: flex;
 	justify-content: center;
 	flex-direction: column;
+
 	width: 810px;
 	height: 860px;
 	background-color: white;
 	border-bottom-right-radius: 50px;
 	z-index: -1;
 	h1 {
-		padding-left: 10rem;
+		margin-left: 10rem;
 		font-size: 50px;
 		padding-right: 8rem;
+		font-weight: 600;
 	}
 	p {
-		padding-left: 10rem;
+		margin-left: 10rem;
 		color: $mediumGray;
-		padding-right: 9rem;
+		margin-right: 9rem;
 		margin-top: 2rem;
 	}
-	
 }
 .hero_section-container {
 	margin-right: auto;
@@ -110,7 +121,7 @@
 	color: $btnColor;
 }
 
-.hero_section-containerText::after{
+.hero_section-containerText::after {
 	content: '';
 	position: absolute;
 	width: 60px;
@@ -121,30 +132,4 @@
 
 .hero_section-play {
 	cursor: pointer;
-}
-
-
-.hero_section-decoration{
-	position: absolute;
-	background-color: $mediumGray;
-	width: 400px;
-	height: 270px;
-}
-.decoration-one{
-	top: 200px;
-	right: 130px;
-	border-radius: 50px 0px 50px 50px;
-}
-
-.decoration-two {
-	top: 550px;
-	right: 70px;
-	transform: rotate(90deg);
-	border-radius: 50px 0px 50px 50px;
-}
-
-.decoration-three {
-	top: 485px;
-	right: 430px;
-	border-radius: 50px 50px 50px 0px;
 }

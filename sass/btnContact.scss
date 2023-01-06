@@ -1,0 +1,10 @@
+.header_contact-btn {
+    transition:  background 0.3s, transform 0.1s;
+}
+
+.header_contact-btn:hover {
+    color: white;
+    border-color: transparent;
+	transform: scale(1.05);
+	
+}

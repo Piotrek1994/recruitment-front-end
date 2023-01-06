@@ -1,0 +1,38 @@
+.blog_section {
+    margin-left: 10rem;
+    margin-top: 6rem;
+}
+
+
+
+.blog_section-title {
+    color: $btnColor;
+}
+
+.blog_section-header {
+    position: relative;
+    font-size: 34px;
+    font-weight: 600;
+}
+
+.blog_section-header::after {
+    content: '';
+    position: absolute;
+    width: 15rem;
+    height: 2px;
+    background-color: $btnColor;
+    top: 50%;
+    left: 23rem;
+}
+
+.blog_section-wrapper{
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog_section-card {
+    width: 20rem;
+    height: 30rem;
+    margin-right: 130px;
+    background-color: red;
+}
