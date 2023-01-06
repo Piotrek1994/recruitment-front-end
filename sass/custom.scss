@@ -4,3 +4,10 @@ $lightGray: #f5f5f7;
 $mediumGray: #9f9f9f;
 $strongGray: #1d1d1d;
 $btnColor: #0f6eff;
+
+.showVideo {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
