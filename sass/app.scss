@@ -4,7 +4,6 @@
 @import 'navPointer';
 @import 'btnContact';
 @import 'blogSection';
-@import 'mediaQueries';
 
 .wrapper {
 	display: flex;
@@ -65,23 +64,24 @@
 			color: $mediumGray;
 		}
 	}
-}
-
-.nav {
-	width: 370px;
-	margin-left: 80px;
-	ul {
-		display: flex;
-		justify-content: space-between;
-		li {
-			position: relative;
-			cursor: pointer;
-		}
-		li:hover {
-			color: $btnColor;
+	.nav {
+		width: 370px;
+		margin-left: 80px;
+		ul {
+			display: flex;
+			justify-content: space-between;
+			li {
+				position: relative;
+				cursor: pointer;
+			}
+			li:hover {
+				color: $btnColor;
+			}
 		}
 	}
 }
+
+
 
 .hero_section {
 	// position: absolute;
@@ -106,35 +106,38 @@
 		margin-right: 9rem;
 		margin-top: 2rem;
 	}
-}
-.hero_section-container {
-	margin-right: auto;
-	margin-top: 5rem;
-	display: flex;
-	align-items: center;
-	left: 0;
-	bottom: 6rem;
+	.hero_section-container {
+		margin-right: auto;
+		margin-top: 5rem;
+		display: flex;
+		align-items: center;
+		left: 0;
+		bottom: 6rem;
+		.hero_section-play {
+			cursor: pointer;
+		}
+		.hero_section-containerText {
+			position: relative;
+			width: 7rem;
+			margin-left: 2rem;
+			color: $btnColor;
+		}
+		
+		.hero_section-containerText::after {
+			content: '';
+			position: absolute;
+			width: 60px;
+			height: 1px;
+			left: 0;
+			background-color: $btnColor;
+		}
+	}
 }
 
-.hero_section-containerText {
-	position: relative;
-	width: 7rem;
-	margin-left: 2rem;
-	color: $btnColor;
-}
 
-.hero_section-containerText::after {
-	content: '';
-	position: absolute;
-	width: 60px;
-	height: 1px;
-	left: 0;
-	background-color: $btnColor;
-}
 
-.hero_section-play {
-	cursor: pointer;
-}
+
+
 
 @media (max-width: 1200px) {
 	.wrapper {
