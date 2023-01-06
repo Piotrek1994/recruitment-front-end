@@ -1,38 +1,151 @@
 .blog_section {
-    margin-left: 10rem;
-    margin-top: 6rem;
+	margin-left: 10rem;
+	margin-top: 6rem;
 }
 
-
-
 .blog_section-title {
-    color: $btnColor;
+	color: $btnColor;
 }
 
 .blog_section-header {
-    position: relative;
-    font-size: 34px;
-    font-weight: 600;
+	position: relative;
+	font-size: 34px;
+	font-weight: 600;
 }
 
 .blog_section-header::after {
-    content: '';
-    position: absolute;
-    width: 15rem;
-    height: 2px;
-    background-color: $btnColor;
-    top: 50%;
-    left: 23rem;
+	content: '';
+	position: absolute;
+	width: 15rem;
+	height: 2px;
+	background-color: $btnColor;
+	top: 50%;
+	left: 23rem;
 }
 
-.blog_section-wrapper{
-    display: flex;
-    justify-content: space-between;
+.blog_section-wrapper {
+	display: flex;
+	justify-content: space-between;
+	margin: 100px 270px 100px 0px;
+	.card-one {
+		background-color: $strongGray;
+		position: relative;
+		color: white;
+		.text {
+			font-size: 22px;
+		}
+		.date {
+			margin-bottom: 1rem;
+			font-weight: 300;
+            font-size: 15px;
+		}
+	}
+	.card-one::before {
+		content: '';
+		position: absolute;
+		width: 110px;
+		height: 110px;
+		background-color: white;
+		border-radius: 50%;
+		top: 0;
+		left: -80px;
+		z-index: -2;
+	}
+	.card-two, .card-three {
+		.date {
+			font-weight: 300;
+            font-size: 15px;
+		}
+        .name {
+            font-weight: 600;
+        }
+        .text {
+            font-size: 13px;
+            color: $mediumGray;
+        }
+        .headline {
+            font-size: 15px;
+        }
+        .line {
+            width: 100%;
+            height: 1px;
+            background-color: $mediumGray;
+        }
+		.blog_section-cardWrapper {
+			display: flex;
+			.blog_section-cardWrapperInfo {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+				margin-left: 1rem;
+			}
+		}
+		.photo {
+			width: 3rem;
+			height: 3rem;
+			background-color: $mediumGray;
+			border-radius: 50%;
+		}
+	}
 }
 
 .blog_section-card {
-    width: 20rem;
-    height: 30rem;
-    margin-right: 130px;
-    background-color: red;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	width: 19rem;
+	height: 23rem;
+	padding: 2.6rem;
+	border-radius: 50px 50px 0px 50px;
+	background-color: white;
+}
+.card_one-btn {
+	position: relative;
+	margin-top: 50px;
+	color: white;
+	bottom: 0;
+	width: 65px;
+	height: 65px;
+	border: 1px solid white;
+	border-radius: 50%;
+	font-size: 12px;
+}
+
+.card_one-btn::after {
+	content: '';
+	position: absolute;
+	width: 12px;
+	height: 1px;
+	background-color: white;
+	left: 17px;
+	top: 60%;
+}
+
+.card_one-btn::before {
+	content: '';
+	position: absolute;
+	width: 190px;
+	height: 1px;
+	background-color: white;
+	top: 50%;
+	right: 75px;
+}
+
+
+
+.card_two-btn, .card_three-btn {
+    position: relative;
+    margin-bottom: 2rem;
+	width: 80px;
+    font-size: 14px;
+    color: $btnColor;
+}
+
+.card_two-btn::before, .card_three-btn::before {
+    content: '';
+    position: absolute;
+    width: 78px;
+    height: 1px;
+    background-color: $btnColor;
+    bottom: -2px;
 }
