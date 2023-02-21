@@ -12,3 +12,17 @@ To run task use commands below:
   cd recruitment-front-end
   npm install
 ```
+
+
+## Usage
+To run app in local server use command:
+```bash
+npm run dev
+```
+It will open browser automatically and point to localhost:3000. Webpack has hot reload so all changes in code will cause reloading the page.
+
+When you end creating code use command:
+```bash
+npm run build
+```
+To create distribution package.
